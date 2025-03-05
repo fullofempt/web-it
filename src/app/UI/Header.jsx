@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { HiMenu } from "react-icons/hi";
 import Link from 'next/link';
+import routes from '../routes';
 
 const Header = ({ input, setInput }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +15,9 @@ const Header = ({ input, setInput }) => {
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (
-                menuRef.current && 
+                menuRef.current &&
                 !menuRef.current.contains(event.target) &&
-                buttonRef.current && 
+                buttonRef.current &&
                 !buttonRef.current.contains(event.target)
             ) {
                 setIsMenuOpen(false);
@@ -30,7 +31,7 @@ const Header = ({ input, setInput }) => {
 
     return (
         <div className="relative z-50">
-            <header className="flex w-full items-center justify-between p-2 relative bg-white shadow-md">
+            <header className="flex w-full items-center justify-between p-2 relative bg-sky-100 shadow-md">
                 {/* Burger Menu */}
                 <button
                     ref={buttonRef}
@@ -41,8 +42,8 @@ const Header = ({ input, setInput }) => {
                 </button>
 
                 {/* Mobile Menu */}
-                <div 
-                    ref={menuRef} 
+                <div
+                    ref={menuRef}
                     className={`absolute top-full left-0 mt-2 w-max h-max bg-[#7BE9FF] rounded-lg shadow-lg p-4 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5 pointer-events-none'}`}
                     onMouseLeave={() => setIsMenuOpen(false)}
                 >
@@ -62,23 +63,28 @@ const Header = ({ input, setInput }) => {
                     </nav>
                 </div>
 
-                {/* Desktop and Tablet Buttons */}
                 <div className="hidden md:flex justify-center items-center space-x-5 ml-65">
                     <button className="px-5 rounded-xl bg-[#ADE8F4] hover:bg-cyan-200 text-black">
                         Заявка
                     </button>
                     <button className="px-5 rounded-xl bg-[#ADE8F4] hover:bg-cyan-200 text-black">
-                        Об университете
+                        <Link href={routes.aboutUniver} legacyBehavior>
+                            Об университете
+                        </Link>
                     </button>
                     <button className="px-5 rounded-xl bg-[#ADE8F4] hover:bg-cyan-200 text-black">
-                        Материалы
+                        <Link href={routes.materials}>
+                            Материалы
+                        </Link>
                     </button>
                     <button className="px-5 rounded-xl bg-[#ADE8F4] hover:bg-cyan-200 text-black">
-                        Проекты учеников
+                        <Link href={routes.projects}>
+                            Проекты учеников
+                        </Link>
                     </button>
                 </div>
 
-                {/* Search and Login */}
+                {/* Поиск-логин */}
                 <div className="flex items-center space-x-5">
                     <input
                         className="hidden md:block px-3 py-2 h-6 w-40 rounded-xl text-black bg-[#ADE8F4] hover:bg-cyan-200 focus:outline-none"
@@ -88,7 +94,9 @@ const Header = ({ input, setInput }) => {
                         placeholder="Поиск"
                     />
                     <button className="px-5 rounded-xl bg-[#ADE8F4] hover:bg-cyan-200 text-black">
-                        Логин
+                        <Link href={routes.login}>
+                            Логин
+                        </Link>
                     </button>
                 </div>
             </header>

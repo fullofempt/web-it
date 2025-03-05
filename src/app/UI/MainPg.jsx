@@ -5,7 +5,7 @@ const MainPg = () => {
     return (
         <div className="">
             <main className="grid grid-cols-1 md:grid-cols-2 w-screen h-220 overflow-hidden">
-                <div className="relative w-full h-full">
+                <div className="relative w-full h-full hover:scale-105 transition-transform duration-300">
                     <Image
                         className="w-full h-full object-cover"
                         src="/img/09.03.03.png"
@@ -32,9 +32,9 @@ const MainPg = () => {
                     </div>
                 </div>
 
-                <div className="relative w-full h-full">
+                <div className="relative w-full h-full hover:scale-105 transition-transform duration-300">
                     <Image
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover "
                         src="/img/09.03.02.png"
                         alt="Right Image"
                         width={180}
