@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import Header from "./UI/header";
+import Header from "./UI/Header";
 import MainPg from "./UI/MainPg";
 import Footer from "./UI/Footer";
 
