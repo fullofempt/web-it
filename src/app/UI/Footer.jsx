@@ -36,7 +36,7 @@ const Footer = () => {
 
     return (
         <div>
-            <footer className="flex w-full bg-gradient-to-t from-sky-500 to-indigo-500">
+            <footer className="flex w-full bg-gradient-to-t from-sky-500 to-indigo-500 shadow-2xl">
                 <div className="flex justify-center w-full max-w-screen-lg mx-auto px-4 py-2">
                     <a
                         className="flex items-center hover:underline hover:underline-offset-4 font-black"
@@ -48,9 +48,11 @@ const Footer = () => {
                     </a>
                 </div>
             </footer>
-            <div className="flex justify-center items-center bg-sky-500 ">
-                <h1 className="font-bold text-3xl mb-10 mt-5">Проекты учеников 🠗</h1>
+
+            <div className="flex justify-center items-center bg-[#023e8a] ">
+                <h1 className="font-bold text-3xl mb-10 mt-5">Проекты Студентов 🠗</h1>
             </div>
+
             <div className="relative w-full overflow-hidden">
                 <div
                     className="flex transition-transform duration-1000"
@@ -60,7 +62,7 @@ const Footer = () => {
                         <div className="flex w-full flex-shrink-0" key={index}>
                             {group.map((item) => (
                                 <div
-                                    className="w-full md:w-1/3 px-2 bg-gradient-to-t from-indigo-500 to-sky-500 flex justify-center items-center"
+                                    className="w-full md:w-1/3 px-2 bg-gradient-to-t from-sky-700 bg-[#023e8a] flex justify-center items-center"
                                     key={item.id}
                                 >
                                     <div className="flex flex-col items-center">

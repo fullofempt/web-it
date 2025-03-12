@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import routes from '../routes';
 
 const MainPg = () => {
     return (
@@ -19,7 +20,8 @@ const MainPg = () => {
                     <div>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4">
                             <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4">09.03.03</h1>
-                            <p className="text-3xl sm:text-4xl md:text-5xl mb-6">Прикладная <br /> Информатика</p>
+                            <p className="text-3xl sm:text-4xl md:text-5xl mb-6">Прикладная информатика  <br />и системы искусственного интеллекта</p>
+
                             <a
                                 href="https://pspu.ru/?ysclid=m7oi0pn5dt184634939"
                                 target="_blank"
@@ -45,9 +47,10 @@ const MainPg = () => {
                     <div>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4">
                             <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4">09.03.02</h1>
-                            <p className="text-3xl sm:text-4xl md:text-5xl mb-6">Информационные системы <br />и технологии</p>
+                            <p className="text-3xl sm:text-4xl md:text-5xl mb-6">Информационные системы   <br />и разработка компьютерных игр</p>
+
                             <a
-                                href="https://pspu.ru/?ysclid=m7oi0pn5dt184634939"
+                                href={routes.gamenapravlenie}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-6 py-2 text-2xl sm:text-3xl md:text-4xl mt-5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
