@@ -63,7 +63,7 @@ const Header = ({ input, setInput }) => {
                     </nav>
                 </div>
 
-                <div className=" hidden md:grid grid-cols-4 items-center space-x-5 ml-50 ">
+                <div className=" hidden lg:grid grid-cols-4 items-center space-x-5 ml-50 ">
                     <button className="px-5 rounded-xl  hover:bg-blue-600 text-white">
                         <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" legacyBehavior>
                         Заявка

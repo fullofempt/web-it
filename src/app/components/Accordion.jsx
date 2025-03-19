@@ -34,7 +34,7 @@ const Accordion = () => {
 
     return (
         <div className="flex justify-center">
-            <div className="flex flex-col justify-center items-center p-10 rounded-xl h-auto w-400 md:py-20 ">
+            <div className="flex flex-col justify-center items-center p-10 rounded-xl h-auto w-full max-w-8xl md:py-20 ">
                 {data.map((data) => (
                     <AccordionUI
                         key={data.id}

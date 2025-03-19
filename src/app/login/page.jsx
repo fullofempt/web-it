@@ -8,7 +8,7 @@ export default function Login() {
 
         <form className="mt-6">
           <div>
-            <label htmlFor="email" class="block text-sm text-sky-400">Email</label>
+            <label htmlFor="email" className="block text-sm text-sky-400">Email</label>
             <input type="email"
               className="block w-full px-4 py-2 mt-2 text-sky-400 bg-white border rounded-md focus:border-sky-600 focus:ring-sky-600 focus:outline-none focus:ring focus:ring-opacity-40"/>
           </div>

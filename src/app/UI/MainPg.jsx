@@ -5,7 +5,7 @@ import routes from '../routes';
 const MainPg = () => {
     return (
         <div className="">
-            <main className="grid grid-cols-1 md:grid-cols-2 w-screen h-220 overflow-hidden">
+            <main className="grid grid-cols-1 md:grid-cols-2 w-screen h-282 overflow-hidden">
                 <div className="relative w-full h-full hover:scale-105 transition-transform duration-300">
                     <Image
                         className="w-full h-full object-cover"
@@ -19,8 +19,8 @@ const MainPg = () => {
 
                     <div>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4">
-                            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4">09.03.03</h1>
-                            <p className="text-3xl sm:text-4xl md:text-5xl mb-6">Прикладная информатика  <br />и системы искусственного интеллекта</p>
+                            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4">09.03.03</h1>
+                            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">Прикладная информатика  <br />и системы искусственного интеллекта</p>
 
                             <a
                                 href="https://pspu.ru/?ysclid=m7oi0pn5dt184634939"
@@ -46,8 +46,8 @@ const MainPg = () => {
                     <div className="absolute inset-0 backdrop-blur-sm"></div>
                     <div>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4">
-                            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4">09.03.02</h1>
-                            <p className="text-3xl sm:text-4xl md:text-5xl mb-6">Информационные системы   <br />и разработка компьютерных игр</p>
+                            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4">09.03.02</h1>
+                            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">Информационные системы   <br />и разработка компьютерных игр</p>
 
                             <a
                                 href={routes.gamenapravlenie}

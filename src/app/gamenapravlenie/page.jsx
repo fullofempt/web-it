@@ -3,14 +3,15 @@ import Image from 'next/image'
 import React from 'react'
 import Header from '../UI/Header'
 import Accordion from '../components/Accordion'
+import Corusel from '../components/Corusel'
 
 export default function Page() {
   return (
-    <div className="relative min-h-screen bg-[#023e8a] ">
-      <Header></Header>
-      <div className="flex justify-start items-center p-5 0 ml-10 mr-10">
+    <div className="relative min-h-screen bg-[#023e8a] overflow-hidden overflow-x-hidden">
+      <Header />
+      <div className="flex flex-col lg:flex-row justify-start items-center p-5 0 ml-10 mr-10">
         <article className="max-w-5xl  rounded-lg p-6  shadow-xl ">
-          <div className="float-right ml-4 mb-2 w-80 h-60 relative">
+          <div className="float-center ml-4 mb-5 w-80 h-40   xl:w-80 xl:h-60 xl:float-right relative ">
             <Image
               src="/img/imgProgramists.png"
               alt="Программисты"
@@ -19,7 +20,7 @@ export default function Page() {
               className="rounded-md shadow-xl shadow-blue-600"
             />
           </div>
-          <p className="text-2xl text-white font-black">
+          <p className="text-lg lg:text-xl text-white font-black">
             * Программа предназначена для подготовки специалистов в области разработки и сопровождения информационных систем с использованием игровых компьютерных технологий для решения широкого круга прикладных задач.
             <br /><br />
             * Уникальность программы – сочетание технологий, таких как: искусственный интеллект, компьютерная графика, виртуальная и смешанная реальность с практическими навыками проектирования, реализации и сопровождения игровых разработок для обучения, конструирования, реализации тренажеров и, конечно, для игр.
@@ -28,37 +29,35 @@ export default function Page() {
           </p>
         </article>
 
-        <div>
-          <div className="flex flex-col ">  
-            <div className="inset-0 flex flex-col items-end justify-center mb-5">
-              <h1 className="font-black text-5xl">Чего стоит ожидать?</h1>
-            </div>
-            <div className="flex justify-center items-center">
-              <div className="ml-15 mb-2 w-245 h-120 relative">
-                <Image
-                  src="/img/imgProgramists.png"
-                  alt="Программисты"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-md shadow-2xl shadow-black "
-                />
-              </div>
+        <div className="flex flex-col mt-10 lg:mt-0">
+          <div className="inset-0 flex flex-col items-center lg:items-end justify-center mb-5">
+            <h1 className="font-black text-xl md:text-1xl lg:text-2xl xl:text-3xl">Чего стоит ожидать?</h1>
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="ml-0 w-70 h-48 md:w-120 md:h-55 lg:ml-10  lg:w-80 lg:h=120 xl:w-220 xl:h-120 relative">
+              <Image
+                src="/img/imgProgramists.png"
+                alt="Программисты"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-md shadow-2xl shadow-black"
+              />
             </div>
           </div>
         </div>
       </div>
 
 
-      <div className="flex justify-end items-center p-5 ml-10 mr-10">
+      <div className="flex flex-col lg:flex-row justify-end items-center p-5 ml-10 mr-10">
 
-        <div className="flex flex-col ">
-          <div className="inset-0 flex flex-col items-center justify-center mb-5">
-            <h1 className="font-black text-5xl">Примеры разработанных игр на данном направлении</h1>
+        <div className="flex flex-col mt-5 lg:mt-0 ">
+          <div className="inset-0 flex flex-col items-center lg:items-start justify-center mb-5">
+            <h1 className="font-black text-xl md:text-1xl lg:text-2xl xl:text-3xl">Примеры разработанных игр на данном направлении</h1>
           </div>
 
 
           <div className="flex justify-center items-center">
-            <div className="mr-15 mb-2 w-245 h-120 relative">
+            <div className="mr-0 w-70 h-48 md:w-120 md:h-55 lg:mr-20  lg:w-80 lg:h=120 xl:w-220 xl:h-120 relative">
               <Image
                 src="/img/imgProgramists.png"
                 alt="Программисты"
@@ -70,8 +69,8 @@ export default function Page() {
           </div>
         </div>
 
-        <article className="max-w-5xl  rounded-lg p-6 shadow-xl">
-          <div className="float-left mr-4 mb-2 w-120 h-80 relative shadow-xl shadow-blue-600">
+        <article className="max-w-5xl  rounded-lg p-6 shadow-xl mt-10">
+          <div className="float-center ml-4 mb-5 w-80 h-40   xl:w-80 xl:h-60 xl:float-left relative shadow-xl shadow-blue-600">
             <Image
               src="/img/imgProgramists.png"
               alt="Программисты"
@@ -81,7 +80,7 @@ export default function Page() {
             />
           </div>
 
-          <p className="text-2xl text-white text-right font-black">
+          <p className="text-lg lg:text-xl text-white text-right font-black">
             Программа предназначена для подготовки специалистов в области разработки и сопровождения информационных систем с использованием игровых компьютерных технологий для решения широкого круга прикладных задач.
             <br /><br />
             Уникальность программы – сочетание технологий, таких как: искусственный интеллект, компьютерная графика, виртуальная и смешанная реальность с практическими навыками проектирования, реализации и сопровождения игровых разработок для обучения, конструирования, реализации тренажеров и, конечно, для игр.
@@ -92,7 +91,8 @@ export default function Page() {
 
       </div>
       <div className="mt-5"></div>
-          <Accordion className=""/>
+      <Accordion className="" />
+      <Corusel className=""/>
     </div>
 
   )

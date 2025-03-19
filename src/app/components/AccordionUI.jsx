@@ -25,7 +25,8 @@ const AccordionUI = ({title, children, Id, Index, setIndex}) => {
     </div>
 
     {Index === Id && (
-      <div className="bg-pink-100 pl-10  font-semibold text-pink-500 w-3/4 h-auto  rounded-md p-4 border-l-2 border-blue-300 mb-2 ">
+      <div className="bg-pink-100 pl-5  font-semibold text-pink-500 w-3/4 h-auto  rounded-md p-4 border-l-2 border-blue-300 mb-2 
+      whitespace-normal break-words overflow-wrap">
         {children}
       </div>
     )}
