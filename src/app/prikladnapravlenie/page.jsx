@@ -92,58 +92,7 @@ export default function Page() {
       </div>
       <div className="mt-5"></div>
       <Accordion className="" />
-      <Corusel className="" />
-
-      <div className="flex justify-center bg-gradient-to-t from-[#023e8a] to-sky-700 mb-10">
-        <div className="mt-10 bg-[#000ba72f] w-100  md:w-150 lg:w-250 xl:w-350 xl:h-120 rounded-2xl shadow-2xl">
-          <article className="flex flex-col lg:flex-row justify-center max-w-7xl p-6 ">
-            <div className="flex justify-center items-center mt-5 ml-4 w-80 h-120 md:w-120 md:h-150 md:ml-10 lg:w-150 lg:h-150 xl:w-100 xl:h-100 xl:float-left relative shadow-xl">
-              <Image
-                src="/img/lev.png"
-                alt="Программисты"
-                fill
-                objectFit="cover"
-                className=" rounded-xl shadow-xl"
-              />
-
-
-            </div>
-            <div className="lg:ml-10">
-              <div className=" flex mb-5 text-2xl justify-center">
-                <h1 className="font-black text-center">Руководитель направления</h1>
-
-              </div>
-              <p className="text-lg lg:text-xl text-white text-left border-1 bg-[#000ba72f]  rounded-2xl">
-                <div className="p-5 text-center font-bold lg:w-100 xl:w-200 xl:h-95">
-                  Худорожков Лев Юрьевич
-                  <br></br>
-                  <br></br>
-                  Руководитель Пермской студии разработки игр “STORY GAMES”
-                  <br></br>
-                  <br></br>
-                  Образование:
-                  2018 - 2022 ПГГПУ, «Информационные системы и технологии», Бакалавр
-                  <br></br>
-                  2022 - 2024 УРФУ. "Инженерия искусственного интеллекта", Магистр
-                  <br></br>
-                  <br></br>
-                  Стаж работы: 6 лет
-                  <br></br>
-                  <br></br>
-                  Курсы и дисциплины
-                  Геймдизайн
-                  Практикум GameDev
-                  Разработка игр на платформе Unity
-                  История видеоигровой индустрии
-                </div>
-              </p>
-            </div>
-
-
-          </article>
-        </div>
-      </div>
-
+      <Corusel className=""/>
     </div>
 
   )

@@ -5,7 +5,8 @@ const routes = {
     projects: "/projects",
     login: "/login",
     register: "/register",
-    gamenapravlenie: "/gamenapravlenie"
+    gamenapravlenie: "/gamenapravlenie",
+    prikladnapravlenie: "/prikladnapravlenie"
 };
 
 export default routes;

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Login() {
   return (
-    <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
+    <div className="relative flex flex-col justify-center min-h-screen overflow-hidden bg-[#023e8a]">
       <div className="w-full p-6 m-auto bg-white rounded-4xl shadow-lg ring-2 ring-sky-400 lg:max-w-md">
         <h1 className="text-3xl font-semibold text-center text-sky-400">PSHPU GAME-CREATOR TEAM</h1>
 

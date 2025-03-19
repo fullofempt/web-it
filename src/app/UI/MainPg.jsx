@@ -23,7 +23,7 @@ const MainPg = () => {
                             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">Прикладная информатика  <br />и системы искусственного интеллекта</p>
 
                             <a
-                                href="https://pspu.ru/?ysclid=m7oi0pn5dt184634939"
+                                href={routes.prikladnapravlenie}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-6 py-2 text-2xl sm:text-3xl md:text-4xl mt-5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
