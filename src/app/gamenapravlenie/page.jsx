@@ -4,6 +4,7 @@ import React from 'react'
 import Header from '../UI/Header'
 import Accordion from '../components/Accordion'
 import Corusel from '../components/Corusel'
+import Corusel2 from '../components/Corusel2'
 
 export default function Page() {
   return (
@@ -93,6 +94,7 @@ export default function Page() {
       <div className="mt-5"></div>
       <Accordion className="" />
       <Corusel className="" />
+      <Corusel2 className=""/>
 
       <div className="flex justify-center bg-gradient-to-t from-[#023e8a] to-sky-700 mb-10">
         <div className="mt-10 bg-[#000ba72f] w-100  md:w-150 lg:w-250 xl:w-350 xl:h-120 rounded-2xl shadow-2xl">
@@ -135,6 +137,7 @@ export default function Page() {
                   Практикум GameDev
                   Разработка игр на платформе Unity
                   История видеоигровой индустрии
+                  
                 </div>
               </p>
             </div>

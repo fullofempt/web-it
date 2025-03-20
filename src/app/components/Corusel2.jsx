@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-const Corusel = () => {
+const Corusel2 = () => {
     const images = [
-        { id: 1, src: '/img/crsl1.png', text: 'Экскурсия по университету “В ритме ПГГПУ”' },
-        { id: 2, src: '/img/crsl2.png', text: 'Игра по информатике “Найти выход”' },
-        { id: 3, src: '/img/crsl3.png', text: 'Новелла по сказу Бажова ”Голубая змейка”' },
-        { id: 4, src: '/img/crsl3.png', text: 'Проект 4' },
-        { id: 5, src: '/img/crsl2.png', text: 'Проект 5' },
-        { id: 6, src: '/img/crsl1.png', text: 'Проект 6' },
+        { id: 1, src: '/img/crsl21.png', text: 'Anothers Destiny' },
+        { id: 2, src: '/img/crsl22.png', text: 'Последний день героя' },
+        { id: 3, src: '/img/crsl23.png', text: 'Потерянный' },
+        { id: 4, src: '/img/crsl23.png', text: 'Проект 4' },
+        { id: 5, src: '/img/crsl22.png', text: 'Проект 5' },
+        { id: 6, src: '/img/crsl21.png', text: 'Проект 6' },
 
     ];
 
@@ -35,8 +35,8 @@ const Corusel = () => {
     const groupedImages = getGroupedImages();
 
     return (<div>
-        <div className="flex justify-center items-center bg-[#023e8a] ">
-            <h1 className="font-bold text-3xl mb-10 mt-5">Проекты Студентов ▼</h1>
+        <div className="flex justify-center items-center bg-sky-700 ">
+            <h1 className="font-bold text-3xl mb-10 mt-5">Игры с Геймджемов ▼</h1>
         </div>
 
         <div className="relative w-full overflow-hidden">
@@ -48,7 +48,7 @@ const Corusel = () => {
                     <div className="flex w-full flex-shrink-0" key={index}>
                         {group.map((item) => (
                             <div
-                                className="w-full md:w-1/3 px-2 bg-gradient-to-t from-sky-700 bg-[#023e8a] flex justify-center items-center"
+                                className="w-full md:w-1/3 px-2  bg-sky-700  flex justify-center items-center"
                                 key={item.id}
                             >
                                 <div className="flex flex-col items-center">
@@ -71,4 +71,4 @@ const Corusel = () => {
     )
 }
 
-export default Corusel;
+export default Corusel2;
