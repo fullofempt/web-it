@@ -18,7 +18,7 @@ const Corusel = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalGroups);
-        }, 5000);
+        }, 20000);
 
         return () => clearInterval(interval);
     }, [totalGroups]);
@@ -41,7 +41,7 @@ const Corusel = () => {
 
         <div className="relative w-full overflow-hidden">
             <div
-                className="flex transition-transform duration-1000"
+                className="flex transition-transform duration-4000"
                 style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
             >
                 {groupedImages.map((group, index) => (
