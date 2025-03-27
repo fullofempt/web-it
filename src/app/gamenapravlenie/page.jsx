@@ -94,7 +94,7 @@ export default function Page() {
       <div className="mt-5"></div>
       <Accordion className="" />
       <Corusel className="" />
-      <Corusel2 className=""/>
+      <Corusel2 className="" />
 
       <div className="flex justify-center bg-gradient-to-t from-[#023e8a] to-sky-700 mb-10">
         <div className="mt-10 bg-[#000ba72f] w-100  md:w-150 lg:w-250 xl:w-350 xl:h-120 rounded-2xl shadow-2xl">
@@ -115,8 +115,9 @@ export default function Page() {
                 <h1 className="font-black text-center">Руководитель направления</h1>
 
               </div>
-              <p className="text-lg lg:text-xl text-white text-left border-1 bg-[#000ba72f]  rounded-2xl">
-                <div className="p-5 text-center font-bold lg:w-100 xl:w-200 xl:h-95">
+              <div className="p-5 text-center font-bold lg:w-100 xl:w-200 xl:h-95">
+
+                <p className="text-lg lg:text-xl text-white text-left  rounded-2xl">
                   Худорожков Лев Юрьевич
                   <br></br>
                   <br></br>
@@ -137,9 +138,10 @@ export default function Page() {
                   Практикум GameDev
                   Разработка игр на платформе Unity
                   История видеоигровой индустрии
-                  
-                </div>
-              </p>
+
+                </p>
+              </div>
+
             </div>
 
 
