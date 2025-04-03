@@ -91,7 +91,10 @@ export default function Page() {
         </article>
 
       </div>
-      <div className="mt-5"></div>
+      <div className="mt-20"></div>
+      <div className='flex justify-center items-center'>
+        <div className='font-black text-3xl mt-10'>Что ты будешь изучать?</div>  
+      </div>
       <Accordion className="" />
       <Corusel className="" />
       <Corusel2 className="" />
