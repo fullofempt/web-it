@@ -6,7 +6,8 @@ const routes = {
     login: "/login",
     register: "/register",
     gamenapravlenie: "/gamenapravlenie",
-    prikladnapravlenie: "/prikladnapravlenie"
+    prikladnapravlenie: "/prikladnapravlenie",
+    prikladnapravlenieE: "/prikladnapravlenieE"
 };
 
 export default routes;
