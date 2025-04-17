@@ -272,7 +272,7 @@ export default function Page() {
         >
           <div className="h-48 sm:h-64 md:h-80 lg:h-200 brightness-70 mt-8 sm:mt-12 md:mt-16 lg:mt-20">
             <Image
-              src="/img/prikol.png"
+              src="/img/inekPhoto.png"
               alt="ИНЭК"
               layout="fill"
               objectFit="cover"
