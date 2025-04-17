@@ -50,7 +50,7 @@ export default function Page() {
         variants={imageVariants}
         className="w-full h-full relative"
       >
-        <div className="h-155  md:h-170 lg:h-190 xl:h-285 brightness-70">
+        <div className="h-160  md:h-170 lg:h-190 xl:h-285 brightness-70">
           <Image
             src="/img/headofPrikladNaprav.png"
             alt="Программисты"
@@ -273,7 +273,7 @@ export default function Page() {
           <div className="h-48 sm:h-64 md:h-80 lg:h-200 brightness-70 mt-8 sm:mt-12 md:mt-16 lg:mt-20">
             <Image
               src="/img/prikol.png"
-              alt="Программисты"
+              alt="ИНЭК"
               layout="fill"
               objectFit="cover"
               className='rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl'
