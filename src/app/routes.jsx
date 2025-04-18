@@ -6,6 +6,7 @@ const routes = {
     login: "/login",
     register: "/register",
     gamenapravlenie: "/gamenapravlenie",
+    gamenapravlenieE: "/gamenapravlenieE",
     prikladnapravlenie: "/prikladnapravlenie",
     prikladnapravlenieE: "/prikladnapravlenieE"
 };

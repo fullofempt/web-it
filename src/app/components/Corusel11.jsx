@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 const Corusel = () => {
     const images = [
-        { id: 1, src: '/img/Anothers Destiny.png' },
-        { id: 2, src: '/img/Последний день героя.png' },
-        { id: 3, src: '/img/Потерянный.png', },
-        { id: 4, src: '/img/Anothers Destiny.png' },
-        { id: 5, src: '/img/Последний день героя.png' },
-        { id: 6, src: '/img/Потерянный.png', },
+        { id: 1, src: '/img/В ритме ПГГПУ.png'},
+        { id: 2, src: '/img/Найти выход.png' },
+        { id: 3, src: '/img/Голубая змейка.png', },
+        { id: 4, src: '/img/В ритме ПГГПУ.png'},
+        { id: 5, src: '/img/Найти выход.png' },
+        { id: 6, src: '/img/Голубая змейка.png', },
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -35,8 +35,8 @@ const Corusel = () => {
 
     return (
     <div className='bg-black mt-10'>
-        <div className="flex justify-center items-center mb-2">
-            <h1 className=" font-black text-white text-3xl mt-5">Проекты с Геймджемов ▼</h1>
+        <div className="flex justify-center items-center mb-2  ">
+            <h1 className="font-black text-white text-3xl mt-5">Проекты Студентов ▼</h1>
         </div>
 
         <div className="relative w-full bg-black overflow-hidden">
@@ -48,7 +48,7 @@ const Corusel = () => {
                     <div className="flex w-full flex-shrink-0" key={index}>
                         {group.map((item) => (
                             <div
-                                className="w-full md:w-max px-2  mt-2 flex justify-center items-center"
+                                className="w-full md:w-max px-2 mt-2  flex justify-center items-center"
                                 key={item.id}
                             >
                                 <div className="flex flex-col items-center">
