@@ -51,11 +51,16 @@ const Header = ({ input, setInput }) => {
                         <ul>
                             <li>
                                 <Link href="/" legacyBehavior>
+                                    <a className="block px-4 py-2 text-white hover:bg-blue-500 rounded-2xl">Главная</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={routes.prikladnapravlenieE} legacyBehavior>
                                     <a className="block px-4 py-2 text-white hover:bg-blue-500 rounded-2xl">Прикладная информатика  <br />и системы искусственного интеллекта</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href={routes.gamenapravlenie} legacyBehavior>
+                                <Link href={routes.gamenapravlenieE} legacyBehavior>
                                     <a className="block px-4 py-2 text-white hover:bg-blue-500 rounded-2xl">Информационные системы   <br />и разработка компьютерных игр</a>
                                 </Link>
                             </li>
@@ -66,7 +71,7 @@ const Header = ({ input, setInput }) => {
                 <div className=" hidden lg:grid grid-cols-4 items-center space-x-5 ml-50 ">
                     <button className="px-5 rounded-xl  hover:bg-blue-600 text-white">
                         <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" legacyBehavior>
-                        Заявка
+                            Заявка
                         </Link>
                     </button>
                     <button className="px-5 rounded-xl  hover:bg-blue-600 text-white">
