@@ -64,7 +64,7 @@ const AccordionUI = ({ title, children, Id, Index, setIndex }) => {
   }
 
   return (
-    <div className={`w-full md:w-4/5 lg:w-3/4 mx-auto mt-5 ${montserrat.className}`}>
+    <div className={`w-full md:w-4/5 lg:w-3/4 mx-auto mt-5 ${montserrat.className} `}>
       <motion.div
         onClick={handleSetIndex}
         initial="hidden"
@@ -72,7 +72,7 @@ const AccordionUI = ({ title, children, Id, Index, setIndex }) => {
         variants={titleVariants}
         whileHover={{ scale: 1.02 }}
         className="flex group cursor-pointer h-14 sm:h-16 justify-between items-center rounded-3xl 
-           bg-white hover:bg-[#aaaaaa] hover:shadow-lg text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"
+                 bg-white hover:bg-[#aaaaaa] hover:shadow-lg text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"
       >
         <div className="text-black font-600 pl-5 sm:pl-8 md:pl-10 group-hover:text-white">
           {title}
