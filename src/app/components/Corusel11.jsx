@@ -17,7 +17,7 @@ const Corusel = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalGroups);
-        }, 20000);
+        }, 10000);
 
         return () => clearInterval(interval);
     }, [totalGroups]);
