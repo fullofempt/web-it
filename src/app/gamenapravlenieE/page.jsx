@@ -58,6 +58,7 @@ export default function Page() {
             alt="Программисты"
             layout="fill"
             objectFit="cover"
+            className=''
           />
         </div>
         <div className="absolute inset-0 backdrop-blur-sm"></div>
