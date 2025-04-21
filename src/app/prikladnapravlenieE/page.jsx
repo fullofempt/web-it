@@ -46,7 +46,7 @@ export default function Page() {
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
         variants={imageVariants}
         className="w-full h-full relative"
       >
@@ -85,7 +85,7 @@ export default function Page() {
       <motion.section
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.2 }}
         variants={sectionVariants}
         className="mt-8 sm:mt-10 lg:mt-12"
       >
@@ -127,7 +127,7 @@ export default function Page() {
         <motion.section
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={sectionVariants}
           className='ml-2 sm:ml-4 md:ml-6 lg:ml-10 mt-8 sm:mt-12 md:mt-16 lg:mt-20'
         >
@@ -156,7 +156,7 @@ export default function Page() {
         <motion.section
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={sectionVariants}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-8 sm:mb-12 md:mb-16">
@@ -168,9 +168,15 @@ export default function Page() {
                 В области программирования, анализа данных и проектирования информационных систем с прикладными навыками для реальных задач.
               </p>
             </div>
-            <div className="flex justify-center mt-4 sm:mt-0">
+            <motion.div
+              initial={{ scale: 0.5 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: false }}
+              transition={{ type: "spring", stiffness: 100 }}
+              className="flex justify-center mt-4 sm:mt-0"
+            >
               <span className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold opacity-20">1</span>
-            </div>
+            </motion.div>
           </div>
         </motion.section>
 
@@ -178,7 +184,7 @@ export default function Page() {
         <motion.section
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={sectionVariants}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-8 sm:mb-12 md:mb-16">
@@ -190,9 +196,15 @@ export default function Page() {
                 Веб- и мобильные приложения, работать с базами данных, применять искусственный интеллект и машинное обучение.
               </p>
             </div>
-            <div className="flex justify-center mt-4 sm:mt-0">
+            <motion.div
+              initial={{ scale: 0.5 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: false }}
+              transition={{ type: "spring", stiffness: 100 }}
+              className="flex justify-center mt-4 sm:mt-0"
+            >
               <span className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold opacity-20">10</span>
-            </div>
+            </motion.div>
           </div>
         </motion.section>
 
@@ -200,7 +212,7 @@ export default function Page() {
         <motion.section
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2}}
           variants={sectionVariants}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-8 sm:mb-12 md:mb-16">
@@ -212,9 +224,15 @@ export default function Page() {
                 Они участвуют в хакатонах, IT-конференциях и стажировках, реализуют собственные проекты.
               </p>
             </div>
-            <div className="flex justify-center mt-4 sm:mt-0">
+            <motion.div
+              initial={{ scale: 0.5 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: false }}
+              transition={{ type: "spring", stiffness: 100 }}
+              className="flex justify-center mt-4 sm:mt-0"
+            >
               <span className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold opacity-20">11</span>
-            </div>
+            </motion.div>
           </div>
         </motion.section>
 
@@ -222,7 +240,7 @@ export default function Page() {
         <motion.section
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={sectionVariants}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-8 sm:mb-12 md:mb-16">
@@ -234,9 +252,15 @@ export default function Page() {
                 Выпускники становятся востребованными разработчиками, системными аналитиками и IT-консультантами.
               </p>
             </div>
-            <div className="flex justify-center mt-4 sm:mt-0">
+            <motion.div
+              initial={{ scale: 0.5 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: false }}
+              transition={{ type: "spring", stiffness: 100 }}
+              className="flex justify-center mt-4 sm:mt-0"
+            >
               <span className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold opacity-20">100</span>
-            </div>
+            </motion.div>
           </div>
         </motion.section>
 
@@ -244,7 +268,7 @@ export default function Page() {
         <motion.section
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={sectionVariants}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-8 sm:mb-12 md:mb-16">
@@ -256,9 +280,15 @@ export default function Page() {
                 Строй успешную карьеру в IT!
               </p>
             </div>
-            <div className="flex justify-center mt-4 sm:mt-0">
+            <motion.div
+              initial={{ scale: 0.5 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: false }}
+              transition={{ type: "spring", stiffness: 100 }}
+              className="flex justify-center mt-4 sm:mt-0"
+            >
               <span className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold opacity-20">101</span>
-            </div>
+            </motion.div>
           </div>
         </motion.section>
 
@@ -266,7 +296,7 @@ export default function Page() {
         <motion.div
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={imageVariants}
           className="w-full h-full relative"
         >
