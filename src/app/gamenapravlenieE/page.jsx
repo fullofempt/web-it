@@ -56,8 +56,9 @@ export default function Page() {
           <Image
             src="/img/LevUr.png"
             alt="Программисты"
-            layout="fill"
-            objectFit="cover"
+            fill
+            priority
+            style={{ objectFit: "cover" }}
             className=''
           />
         </div>
@@ -101,8 +102,8 @@ export default function Page() {
             <Image
               src="/img/gameDesignPh.png"
               alt="Программисты"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
               className='mt-4 sm:mt-8 md:mt-12 lg:mt-5 rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl'
             />
           </motion.div>
@@ -148,7 +149,7 @@ export default function Page() {
             className='text-center'
           >
             <p className='md:ml-15 lg:ml-10 text-xl md:text-5xl xl:text-8xl font-extrabold md:text-center xl:text-left mt-5'>
-              ПОЧЕМУ ТЫ 🫵 ДОЛЖЕН ВЫБРАТЬ НАПРАВЛЕНИЕ ИНФОРМАЦИОННЫЕ СИСТЕМЫ И РАЗРАБОТКА КОМПЬЮТЕРНЫХ ИГР!
+              ПОЧЕМУ ТЫ ДОЛЖЕН ВЫБРАТЬ НАПРАВЛЕНИЕ ИНФОРМАЦИОННЫЕ СИСТЕМЫ И РАЗРАБОТКА КОМПЬЮТЕРНЫХ ИГР!
             </p>
           </motion.article>
 
@@ -180,12 +181,12 @@ export default function Page() {
                   src="/img/lev.png"
                   alt="Программисты"
                   fill
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
                   className="rounded-xl shadow-xl"
                 />
               </motion.div>
               <div className="lg:ml-10">
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: false }}
