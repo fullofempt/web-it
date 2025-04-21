@@ -34,9 +34,9 @@ const Corusel = () => {
     const groupedImages = getGroupedImages();
 
     return (
-    <div className='bg-black mt-10'>
+    <div className='bg-black '>
         <div className="flex justify-center items-center mb-2">
-            <h1 className=" font-black text-white text-3xl mt-5">Проекты с Геймджемов ▼</h1>
+            <h1 className=" font-black text-white text-2xl mt-5 md:text-3xl">Проекты с Геймджемов ▼</h1>
         </div>
 
         <div className="relative w-full bg-black overflow-hidden">

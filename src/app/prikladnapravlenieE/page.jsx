@@ -99,7 +99,7 @@ export default function Page() {
               alt="Программисты"
               layout="fill"
               objectFit="cover"
-              className='mt-4 sm:mt-8 md:mt-12 lg:mt-5 rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl'
+              className='mt-4 sm:mt-8 md:mt-12 lg:mt-5 rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl '
             />
           </motion.div>
 
@@ -110,7 +110,7 @@ export default function Page() {
             transition={{ duration: 0.8 }}
             className='flex justify-center items-center px-4 sm:px-6 md:px-8 lg:px-10'
           >
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl text-black font-extralight text-left py-4 sm:py-6 md:py-8 lg:py-10">
+            <p className="text-xl sm:text-base md:text-lg lg:text-xl xl:text-3xl text-black font-extralight text-center lg:text-left py-4 sm:py-6 md:py-8 lg:py-10">
               Информационные системы и разработка компьютерных игр – молодое и интересное направление, на которое ты можешь поступить в ПГГПУ!
               <br /><br />
               Программа направлена на подготовку ИТ-специалистов в области проектирования и разработки игр на различные платформы. Кроме того, программа содержит в себе сильную фундаментальную подготовку по ИТ-специальностям общего профиля.

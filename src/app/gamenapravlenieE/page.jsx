@@ -33,21 +33,21 @@ export default function Page() {
           и разработка компьютерных игр
         </div>
       </div>
-      <div className='grid grid-cols-2 mt-10 '>
+      <div className='grid grid-cols-1 md:grid-cols-2  gap-4 sm:gap-6 mt-10'>
         <div>
-          <div className="h-160  md:h-170 lg:h-190 xl:h-120 brightness-70 ml-10">
+          <div className="w-full h-48 sm:h-64 md:h-80 lg:h-120 relative mx-auto md:ml-5">
             <Image
               src="/img/gameDesignPh.png"
               alt="Программисты"
               layout="fill"
               objectFit="cover"
-              className='rounded-4xl'
+              className='mt-4 sm:mt-8 md:mt-12 lg:mt-5 rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl'
             />
           </div>
         </div>
-        <div className='flex justify-center ml-10'>
+        <div className='flex justify-center ml-10 mr-10 md:mr-5 md:ml-5'>
           <article>
-            <p className="text-lg lg:text-2xl mt-15 text-black text-left font-black">
+            <p className="text-xl sm:text-base md:text-lg lg:text-xl xl:text-3xl  text-black font-extralight text-center md:text-left py-4 sm:py-6 md:py-8 lg:py-10">
               Информационные системы и разработка компьютерных игр – молодое и интересное направление, на которое ты можешь поступить в ПГГПУ!
               <br /><br />
               Программа направлена на подготовку ИТ-специалистов в области проектирования и разработки игр на различные платформы. Кроме того, программа содержит в себе сильную фундаментальную подготовку по ИТ-специальностям общего профиля.
@@ -56,15 +56,18 @@ export default function Page() {
             </p>
           </article>
         </div>
+      </div>
+      <div className='grid grid-cols-1 md:grid-cols-2 mt-10'>
         <Corusel11 />
         <Corusel2 />
       </div>
-      <div className='grid grid-cols-2 gap-5 bg-black'>
+      <div className='grid frid-cols-1 xl:grid-cols-2 gap-5 bg-black'>
+        <article className='text-center'>
+          <p className=' md:ml-15 lg:ml-10 text-xl md:text-5xl xl:text-8xl font-extrabold md:text-center xl:text-left mt-5'>ПОЧЕМУ ТЫ 🫵 ДОЛЖЕН ВЫБРАТЬ НАПРАВЛЕНИЕ ИНФОРМАЦИОННЫЕ СИСТЕМЫ И РАЗРАБОТКА КОМПЬЮТЕРНЫХ ИГР!</p>
+        </article>
         <Accordion />
         <div>
-          <article className='text-[80px] font-extrabold text-left mt-5'>
-            <p>ПОЧЕМУ ТЫ ДОЛЖЕН ВЫБРАТЬ НАПРАВЛЕНИЕ ИНФОРМАЦИОННЫЕ СИСТЕМЫ И РАЗРАБОТКА КОМПЬЮТЕРНЫХ ИГР</p>
-          </article>
+
         </div>
       </div>
 
