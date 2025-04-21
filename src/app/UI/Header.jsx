@@ -44,7 +44,7 @@ const Header = ({ input, setInput }) => {
                 {/* Mobile Menu */}
                 <div
                     ref={menuRef}
-                    className={`absolute top-full left-0 mt-2 w-max h-max bg-blue-600 rounded-lg shadow-lg p-4 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5 pointer-events-none'}`}
+                    className={`absolute top-full left-0 mt-5 ml-5 w-max h-max bg-blue-600 rounded-lg shadow-lg p-4 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5 pointer-events-none'}`}
                     onMouseLeave={() => setIsMenuOpen(false)}
                 >
                     <nav className="flex flex-col space-y-2">

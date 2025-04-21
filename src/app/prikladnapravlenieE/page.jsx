@@ -52,7 +52,7 @@ export default function Page() {
       >
         <div className="h-160  md:h-170 lg:h-190 xl:h-285 brightness-70">
           <Image
-            src="/img/headofPrikladNaprav.png"
+            src="/img/levUr.png"
             alt="Программисты"
             layout="fill"
             objectFit="cover"
