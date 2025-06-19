@@ -8,7 +8,7 @@ export default function Home() {
   const [input, setInput] = useState("")
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <Header input={input}/>
+      {/* <Header input={input}/> */}
       <MainPg/>
       <Footer/>
     </div >

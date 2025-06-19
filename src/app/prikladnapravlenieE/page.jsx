@@ -40,7 +40,7 @@ export default function Page() {
   return (
     <div className="bg-[#ffffe4] overflow-hidden overflow-x-hidden">
       {/* Header Section */}
-      <Header />
+      {/* <Header /> */}
 
       {/* Hero Banner Section */}
       <motion.div
@@ -52,7 +52,7 @@ export default function Page() {
       >
         <div className="h-160  md:h-170 lg:h-190 xl:h-285 brightness-70">
           <Image
-            src="/img/levUr.png"
+            src="/img/Kudrev.jpg"
             alt="Программисты"
             layout="fill"
             objectFit="cover"
@@ -92,7 +92,7 @@ export default function Page() {
         <article className="grid grid-cols-1 md:grid-cols-2 bg-[#ffffe4] gap-4 sm:gap-6">
           <motion.div
             variants={imageVariants}
-            className="w-full h-48 sm:h-64 md:h-80 lg:h-120 relative mx-auto md:ml-5"
+            className="w-full h-48 sm:h-64 md:h-80 lg:h-150 relative mx-auto md:ml-5"
           >
             <Image
               src="/img/headofPrikladNaprav2.png"
@@ -111,11 +111,11 @@ export default function Page() {
             className='flex justify-center items-center px-4 sm:px-6 md:px-8 lg:px-10'
           >
             <p className="text-xl sm:text-base md:text-lg lg:text-xl xl:text-3xl text-black font-extralight text-center lg:text-left py-4 sm:py-6 md:py-8 lg:py-10">
-              Информационные системы и разработка компьютерных игр – молодое и интересное направление, на которое ты можешь поступить в ПГГПУ!
+              Цель программы: подготовка специалистов в области разработки и сопровождения информационных систем с использованием технологий искусственного интеллекта и анализа данных для решения широкого круга прикладных задач в различных сферах деятельности.
               <br /><br />
-              Программа направлена на подготовку ИТ-специалистов в области проектирования и разработки игр на различные платформы. Кроме того, программа содержит в себе сильную фундаментальную подготовку по ИТ-специальностям общего профиля.
+              Уникальность программы – сочетание фундаментальной подготовки в области программирования с получением практических навыков применения современных технологий машинного обучения и искусственного интеллекта.
               <br /><br />
-              В процессе обучения наши студенты создают собственные игры, участвуют в геймджемах, форумах, конференциях и многих других мероприятиях.
+              Студенты имеют возможность получить базовые знания, освоить практические навыки проектирования аппаратно-программных средств, реализующих искусственный интеллект в профессиональной деятельности.
             </p>
           </motion.div>
         </article>
@@ -212,7 +212,7 @@ export default function Page() {
         <motion.section
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.2}}
+          viewport={{ once: true, amount: 0.2 }}
           variants={sectionVariants}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-8 sm:mb-12 md:mb-16">
@@ -293,23 +293,69 @@ export default function Page() {
         </motion.section>
 
         {/* Финальное изображение */}
-        <motion.div
+        <motion.section
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={imageVariants}
-          className="w-full h-full relative"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={sectionVariants}
+          className="flex justify-center bg-gradient-to-t bg-black"
         >
-          <div className="h-48 sm:h-64 md:h-80 lg:h-200 brightness-70 mt-8 sm:mt-12 md:mt-16 lg:mt-20">
-            <Image
-              src="/img/inekPhoto.png"
-              alt="ИНЭК"
-              layout="fill"
-              objectFit="cover"
-              className='rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl'
-            />
+          <div className="mt-10 bg-white w-100 md:w-150 lg:w-250 xl:w-350 xl:h-130 rounded-2xl shadow-2xl mb-10">
+            <article className="flex flex-col lg:flex-row justify-center max-w-7xl p-6">
+              <motion.div
+                variants={imageVariants}
+                className="flex justify-center items-center mt-5 ml-4 w-80 h-120 md:w-120 md:h-150 md:ml-10 lg:w-150 lg:h-150 xl:w-100 xl:h-110 xl:float-left relative shadow-xl"
+              >
+                <Image
+                  src="/img/kudrev2.jpg"
+                  alt="Программисты"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  className="rounded-xl shadow-xl"
+                />
+              </motion.div>
+              <div className="lg:ml-10">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ delay: 0.2, duration: 0.8 }}
+                  className="flex mb-5 text-2xl justify-center"
+                >
+                  <h1 className="font-black text-black text-center">Руководитель направления</h1>
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ delay: 0.4, duration: 0.8 }}
+                  className="p-5 text-center font-bold lg:w-100 xl:w-200 xl:h-95"
+                >
+                  <p className="text-lg lg:text-xl text-black text-left rounded-2xl">
+                    Кудреватых Виталий Анатольевич
+                    <br /><br />
+                    Руководитель отдела разработки,
+                    ООО «Академия Бизнес Решний»,
+                    Главный тренер Пермской краевой федерации спортивного программирования по дисциплине «Продуктовое программирование»
+                    <br /><br />
+                    Образование:
+                    2017-2021 ПГГПУ «Прикладная информатика», Бакалавр
+                    <br />
+                    2021-2023 ПГГПУ, «Педагогическое образование», Магистр
+                    <br />
+                    2023-н.в. ПГНИУ, «Математические, статистические и инструментальные методы в экономике», Аспирант
+                    <br /><br />
+                    Стаж работы: 4 года
+                    <br /><br />
+                    Курсы и дисциплины:
+                    WEB-программирование
+                    
+                  </p>
+                </motion.div>
+              </div>
+            </article>
           </div>
-        </motion.div>
+        </motion.section>
       </div>
     </div>
   )

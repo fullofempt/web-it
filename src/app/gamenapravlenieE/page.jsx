@@ -42,7 +42,7 @@ const imageVariants = {
 export default function Page() {
   return (
     <div className="overflow-hidden overflow-x-hidden">
-      <Header />
+      {/* <Header /> */}
 
       {/* Hero Banner Section */}
       <motion.div
