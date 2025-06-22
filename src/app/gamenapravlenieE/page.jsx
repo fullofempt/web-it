@@ -9,6 +9,7 @@ import Accordion from '../components/Accordion'
 import FooterSecond from '../components/FooterSecond'
 
 // Настройки анимации (такие же как в примере)
+//for fix
 const sectionVariants = {
   offscreen: {
     opacity: 0,

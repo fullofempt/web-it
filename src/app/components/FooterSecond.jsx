@@ -15,10 +15,11 @@ const FooterSecond = () => {
         },
         {
             id: 3,
-            src: "/img/Morion.png",
+            src: "/img/morionn.png",
             alt: "Morion",
             href: "https://example.com/3"
         },
+
         {
             id: 4,
             src: "/img/inkubator.png",
