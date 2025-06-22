@@ -6,6 +6,7 @@ import Header from '../UI/Header'
 import Corusel11 from '../components/Corusel11'
 import Corusel2 from '../components/Corusel2'
 import Accordion from '../components/Accordion'
+import FooterSecond from '../components/FooterSecond'
 
 // Настройки анимации (такие же как в примере)
 const sectionVariants = {
@@ -226,6 +227,7 @@ export default function Page() {
           </div>
         </motion.section>
       </div>
+      <FooterSecond/>
     </div>
   )
 }

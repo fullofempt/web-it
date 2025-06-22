@@ -5,9 +5,10 @@ const Corusel = () => {
         { id: 1, src: '/img/В ритме ПГГПУ.png'},
         { id: 2, src: '/img/Найти выход.png' },
         { id: 3, src: '/img/Голубая змейка.png', },
-        { id: 4, src: '/img/В ритме ПГГПУ.png'},
-        { id: 5, src: '/img/Найти выход.png' },
-        { id: 6, src: '/img/Голубая змейка.png', },
+        { id: 4, src: '/img/5Days.png'},
+        { id: 5, src: '/img/roadtmaj.png' },
+        { id: 6, src: '/img/race.png', },
+        
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);

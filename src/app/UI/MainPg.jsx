@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Image from "next/image";
+import Link from 'next/link';
 import routes from '../routes';
 
 const MainPg = () => {
@@ -22,14 +23,12 @@ const MainPg = () => {
                             <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4">09.03.03</h1>
                             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">Прикладная информатика  <br />и системы искусственного интеллекта</p>
 
-                            <a
+                            <Link
                                 href={routes.prikladnapravlenieE}
-                                target="_blank"
-                                rel="noopener noreferrer"
                                 className="px-6 py-2 text-2xl sm:text-3xl md:text-4xl mt-5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
                             >
                                 Узнать
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -49,14 +48,12 @@ const MainPg = () => {
                             <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4">09.03.02</h1>
                             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">Информационные системы   <br />и разработка компьютерных игр</p>
 
-                            <a
+                            <Link
                                 href={routes.gamenapravlenieE}
-                                target="_blank"
-                                rel="noopener noreferrer"
                                 className="px-6 py-2 text-2xl sm:text-3xl md:text-4xl mt-5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
                             >
                                 Узнать
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
