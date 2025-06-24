@@ -5,38 +5,32 @@ const FooterSecond = () => {
             id: 1,
             src: "/img/Bunkerdev.png",
             alt: "Bunkerdev",
-            href: "https://example.com/1"
         },
         {
             id: 2,
             src: "/img/gamedevperm.png",
             alt: "GamedevP",
-            href: "https://example.com/2"
         },
         {
             id: 3,
             src: "/img/morionn.png",
             alt: "Morion",
-            href: "https://example.com/3"
         },
 
         {
             id: 4,
             src: "/img/inkubator.png",
             alt: "Pii",
-            href: "https://example.com/4"
         },
         {
             id: 5,
             src: "/img/StoryGame.png",
             alt: "StoryGame",
-            href: "https://example.com/5"
         },
         {
             id: 6,
             src: "/img/Kator.png",
             alt: "Kator",
-            href: "https://example.com/6"
         }
     ];
 
@@ -53,7 +47,6 @@ const FooterSecond = () => {
                     {imageLinks.map((link) => (
                         <a
                             key={link.id}
-                            href={link.href}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-70 max-w-xs hover:opacity-75 transition-opacity"

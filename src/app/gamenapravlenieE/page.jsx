@@ -42,6 +42,12 @@ const imageVariants = {
 }
 
 export default function Page() {
+  const scrollToContent = () => {
+    const contentSection = document.getElementById('content-section');
+    if (contentSection) {
+      contentSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="overflow-hidden overflow-x-hidden">
       {/* <Header /> */}
@@ -85,11 +91,33 @@ export default function Page() {
             <br className="hidden sm:block" />
             и разработка компьютерных игр
           </motion.p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.7, duration: 0.8 }}
+            className="flex flex-col sm:flex-row gap-4 mt-4 sm:mt-6"
+          >
+            <a
+              href="https://pspu.ru/entrant/bachelor/"
+              className="bg-white text-black px-6 py-3 rounded-lg font-bold hover:bg-gray-200 transition-colors duration-300 text-sm sm:text-base"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Поступить на направление
+            </a>
+            <button
+              onClick={scrollToContent}
+              className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-black transition-colors duration-300 text-sm sm:text-base"
+            >
+              Узнать больше
+            </button>
+          </motion.div>
         </div>
       </motion.div>
 
       {/* Content Section */}
       <motion.section
+        id="content-section"
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.2 }}
@@ -228,7 +256,7 @@ export default function Page() {
           </div>
         </motion.section>
       </div>
-      <FooterSecond/>
+      <FooterSecond />
     </div>
   )
 }
