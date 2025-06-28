@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
-import Header from '../UI/Header'
+// import Header from '../UI/Header'
 import Corusel11 from '../components/Corusel11'
 import Corusel2 from '../components/Corusel2'
 import Accordion from '../components/Accordion'

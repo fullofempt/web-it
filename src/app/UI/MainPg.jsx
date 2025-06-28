@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Image from "next/image";
 import Link from 'next/link';
@@ -24,7 +25,7 @@ const MainPg = () => {
                             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">Прикладная информатика  <br />и системы искусственного интеллекта</p>
 
                             <Link
-                                href={routes.prikladnapravlenieE}
+                                href="/prikladnapravlenieE"
                                 className="px-6 py-2 text-2xl sm:text-3xl md:text-4xl mt-5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
                             >
                                 Узнать
@@ -49,7 +50,7 @@ const MainPg = () => {
                             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-6">Информационные системы   <br />и разработка компьютерных игр</p>
 
                             <Link
-                                href={routes.gamenapravlenieE}
+                                href="/gamenapravlenieE"
                                 className="px-6 py-2 text-2xl sm:text-3xl md:text-4xl mt-5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
                             >
                                 Узнать

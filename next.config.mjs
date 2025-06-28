@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',  // Генерирует статические файлы
-    images: {
-        unoptimized: true,  // Отключает оптимизацию изображений
-    },
+//   output: 'export', // Статический экспорт
+  trailingSlash: true, // Добавляет / к URL (решает 404 при прямых переходах)
+  images: {
+    unoptimized: true, // Отключает встроенную оптимизацию изображений
+  },
+
 };
 
 export default nextConfig;

@@ -3,33 +3,33 @@ const FooterSecond = () => {
     const imageLinks = [
         {
             id: 1,
-            src: "/img/Bunkerdev.png",
+            src: "../images/Bunkerdev.png",
             alt: "Bunkerdev",
         },
         {
             id: 2,
-            src: "/img/gamedevperm.png",
+            src: "../images/gamedevperm.png",
             alt: "GamedevP",
         },
         {
             id: 3,
-            src: "/img/morionn.png",
+            src: "../images/morionn.png",
             alt: "Morion",
         },
 
         {
             id: 4,
-            src: "/img/inkubator.png",
+            src: "../images/inkubator.png",
             alt: "Pii",
         },
         {
             id: 5,
-            src: "/img/StoryGame.png",
+            src: "../images/StoryGame.png",
             alt: "StoryGame",
         },
         {
             id: 6,
-            src: "/img/Kator.png",
+            src: "../images/Kator.png",
             alt: "Kator",
         }
     ];
