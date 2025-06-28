@@ -58,10 +58,10 @@ export default function Page() {
       >
         <div className="h-160  md:h-170 lg:h-190 xl:h-285 brightness-70">
           <Image
-            src="/img/Kudrev.jpg"
+            src="/images/Kudrev.jpg"
             alt="Программисты"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{ objectFit: "cover" }}
           />
         </div>
         <div className="absolute inset-0 backdrop-blur-sm"></div>
@@ -125,10 +125,10 @@ export default function Page() {
             className="w-full h-48 sm:h-64 md:h-80 lg:h-150 relative mx-auto md:ml-5"
           >
             <Image
-              src="/img/headofPrikladNaprav2.png"
+              src="/images/headofPrikladNaprav2.png"
               alt="Программисты"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
               className='mt-4 sm:mt-8 md:mt-12 lg:mt-5 rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl '
             />
           </motion.div>
@@ -337,7 +337,7 @@ export default function Page() {
                 className="flex justify-center items-center mt-5 ml-4 w-80 h-120 md:w-120 md:h-150 md:ml-10 lg:w-150 lg:h-150 xl:w-100 xl:h-110 xl:float-left relative shadow-xl"
               >
                 <Image
-                  src="/img/kudrev2.jpg"
+                  src="/images/kudrev2.jpg"
                   alt="Программисты"
                   fill
                   style={{ objectFit: "cover" }}

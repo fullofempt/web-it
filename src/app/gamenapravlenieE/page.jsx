@@ -62,7 +62,7 @@ export default function Page() {
       >
         <div className="h-160 md:h-170 lg:h-190 xl:h-285 brightness-70">
           <Image
-            src="/img/headofPrikladNaprav.png"
+            src="/images/headofPrikladNaprav.png"
             alt="Программисты"
             fill
             priority
@@ -130,7 +130,7 @@ export default function Page() {
             className="w-full h-48 sm:h-64 md:h-80 lg:h-120 relative mx-auto md:ml-5"
           >
             <Image
-              src="/img/gameDesignPh.png"
+              src="/images/gameDesignPh.png"
               alt="Программисты"
               fill
               style={{ objectFit: "cover" }}
@@ -208,7 +208,7 @@ export default function Page() {
                 className="flex justify-center items-center mt-5 ml-4 w-80 h-120 md:w-120 md:h-150 md:ml-10 lg:w-150 lg:h-150 xl:w-100 xl:h-100 xl:float-left relative shadow-xl"
               >
                 <Image
-                  src="/img/lev.png"
+                  src="/images/lev.png"
                   alt="Программисты"
                   fill
                   style={{ objectFit: "cover" }}

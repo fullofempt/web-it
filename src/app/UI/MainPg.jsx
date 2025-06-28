@@ -10,7 +10,7 @@ const MainPg = () => {
                 <div className="relative w-full h-full hover:scale-105 transition-transform duration-300">
                     <Image
                         className="w-full h-full object-cover"
-                        src="/img/09.03.03.png"
+                        src="/images/09.03.03.png"
                         alt="Left Image"
                         width={180}
                         height={38}
@@ -36,7 +36,7 @@ const MainPg = () => {
                 <div className="relative w-full h-full hover:scale-105 transition-transform duration-300">
                     <Image
                         className="w-full h-full object-cover "
-                        src="/img/09.03.02.png"
+                        src="/images/09.03.02.png"
                         alt="Right Image"
                         width={180}
                         height={38}

@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 const Corusel = () => {
     const images = [
-        { id: 1, src: '/img/Anothers Destiny.png' },
-        { id: 2, src: '/img/Последний день героя.png' },
-        { id: 3, src: '/img/Потерянный.png', },
-        { id: 4, src: '/img/Anothers Destiny.png' },
-        { id: 5, src: '/img/Последний день героя.png' },
-        { id: 6, src: '/img/Потерянный.png', },
+        { id: 1, src: '/images/Anothers Destiny.png' },
+        { id: 2, src: '/images/Последний день героя.png' },
+        { id: 3, src: '/images/Потерянный.png', },
+        { id: 4, src: '/images/Anothers Destiny.png' },
+        { id: 5, src: '/images/Последний день героя.png' },
+        { id: 6, src: '/images/Потерянный.png', },
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);

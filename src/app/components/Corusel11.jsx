@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 const Corusel = () => {
     const images = [
-        { id: 1, src: '/img/В ритме ПГГПУ.png'},
-        { id: 2, src: '/img/Найти выход.png' },
-        { id: 3, src: '/img/Голубая змейка.png', },
-        { id: 4, src: '/img/5Days.png'},
-        { id: 5, src: '/img/roadtmaj.png' },
-        { id: 6, src: '/img/race.png', },
+        { id: 1, src: '/images/В ритме ПГГПУ.png'},
+        { id: 2, src: '/images/Найти выход.png' },
+        { id: 3, src: '/images/Голубая змейка.png', },
+        { id: 4, src: '/images/5Days.png'},
+        { id: 5, src: '/images/roadtmaj.png' },
+        { id: 6, src: '/images/race.png', },
         
     ];
 
